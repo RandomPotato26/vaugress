@@ -24,3 +24,7 @@ meteortesting:mocha               # A package for writing and running your meteo
 johanbrook:publication-collector  # Test a Meteor publication by collecting its output
 juliancwirko:postcss@=1.2.0
 semantic:ui
+accounts-base
+useraccounts:semantic-ui
+accounts-password
+accounts-google
