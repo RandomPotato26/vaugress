@@ -1,39 +1,14 @@
 <template name="App_body">
-    <div class="ui secondary  menu">
-        <a class="item">
-            Home
-        </a>
-        <a class="item">
-            Messages
-        </a>
-        <a class="item">
-            Friends
-        </a>
-        <div class="right menu">
-            <div class="item">
-                <div class="ui icon input">
-                    <input type="text" placeholder="Search..." autocomplete="off">
-                    <i class="search link icon"></i>
-                </div>
-            </div>
-            <div class="ui dropdown item">
-                Log In
-                <i class="dropdown icon"></i>
-
-                <div class="menu">
-                    {{> atForm}}
-                </div>
-            </div>
+    <div>
+        <div>
+            {{> Template.dynamic template=nav}}
         </div>
-    </div>
-    <div class="nav">
-        {{> Template.dynamic template=nav}}
-    </div>
-    <div class="content">
-        {{> Template.dynamic template=main}}
+        <div class="ui center aligned">
+            {{> Template.dynamic template=main}}
+        </div>
+        <footer>
+            {{> Template.dynamic template=footer}}
+        </footer>
     </div>
 
-    <footer>
-        {{> Template.dynamic template=footer}}
-    </footer>
 </template>

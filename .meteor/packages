@@ -27,5 +27,5 @@ semantic:ui
 accounts-base
 useraccounts:semantic-ui
 accounts-password
-accounts-google
 accounts-ui
+useraccounts:flow-routing

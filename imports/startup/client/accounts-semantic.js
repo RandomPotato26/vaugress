@@ -4,5 +4,7 @@ AccountsTemplates.configure({
     defaultTemplate: 'App_home',
     defaultLayout: 'App_body',
     defaultLayoutRegions: {},
-    defaultContentRegion: 'main'
+    defaultContentRegion: 'main',
+    showForgotPasswordLink: true,
+    forbidClientAccountCreation: false
 });
