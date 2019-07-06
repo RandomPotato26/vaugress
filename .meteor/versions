@@ -2,6 +2,8 @@ accounts-base@1.4.4
 accounts-google@1.3.3
 accounts-oauth@1.1.16
 accounts-password@1.5.1
+accounts-ui@1.3.1
+accounts-ui-unstyled@1.4.2
 allow-deny@1.1.0
 autoupdate@1.6.0
 babel-compiler@7.3.4
@@ -87,6 +89,7 @@ routepolicy@1.1.0
 semantic:ui@2.3.1
 semantic:ui-data@2.3.1
 service-configuration@1.0.11
+session@1.2.0
 sha@1.0.9
 shell-server@0.4.0
 socket-stream-client@0.2.2
