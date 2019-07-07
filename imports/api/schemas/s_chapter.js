@@ -62,4 +62,4 @@ const Chapter = new SimpleSchema({
     requiredByDefault: false
 });
 
-export {Chapter as chapter};
+export {Chapter as chapter, role_base as role, RL as releaser};
