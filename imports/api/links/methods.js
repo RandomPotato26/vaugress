@@ -2,14 +2,13 @@
 
 import { Meteor } from 'meteor/meteor';
 import { check } from 'meteor/check';
-import { Links } from './links.js';
 
 Meteor.methods({
-  'links.insert'(title, url) {
-    check(url, String);
-    check(title, String);
+  'links.insert'(name, link, mods, members, applied, seperatecl_rd, QC, need ) {
 
-    return Links.insert({
+
+
+    return Groups.insert({
       url,
       title,
       createdAt: new Date(),

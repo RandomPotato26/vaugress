@@ -5,6 +5,7 @@ import { BlazeLayout } from 'meteor/kadira:blaze-layout';
 import '../../ui/layouts/body/body.js';
 import '../../ui/components/nav/nav.js';
 import '../../ui/components/footer/footer.js';
+
 import '../../ui/pages/home/home.js';
 import '../../ui/pages/login/login.js';
 import '../../ui/pages/not-found/not-found.js';
@@ -32,7 +33,10 @@ AccountsTemplates.configureRoute('signIn', {
   path: '/login',
   template: 'App_login',
   layoutTemplate: 'App_body',
-  layoutRegions: {  },
+  layoutRegions: {
+    nav: 'nav',
+    footer: 'footer'
+  },
   contentRegion: 'main',
   redirect: '/'
 });

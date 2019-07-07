@@ -263,7 +263,7 @@ $.fn.form = function(parameters) {
             ;
             return module.is.shorthandRules(firstRule);
           },
-          // duck type rule test
+          // duck type rule TL
           shorthandRules: function(rules) {
             return (typeof rules == 'string' || $.isArray(rules));
           },
