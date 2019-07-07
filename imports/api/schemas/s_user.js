@@ -5,10 +5,12 @@ const UserProfile = new SimpleSchema({
     discord: {
         type: String,
         regEx: /.*#[0-9]{4}/,
+        max:30,
         optional: true
     },
     bio: {
         type: String,
+        max: 300,
         optional: true
     },
 });
@@ -20,11 +22,11 @@ const User = new SimpleSchema({
     },
     email: {
         type: Object,
-        label: "Credit Name",
         optional: true
     },
     "email.address": {
         type: String,
+        label: "Email Adress",
         regEx: SimpleSchema.RegEx.Email
     },
     "email.verified": {
@@ -39,12 +41,12 @@ const User = new SimpleSchema({
     },
     "MD.name": {
         type: String,
-        maxLength: 24
+        max: 24
     },
     "MD.link": {
         type: String,
         regEx: /(https?:\/\/)?(mangadex\.(org)\/user)\/\d+.*/,
-        option: true
+        optional: true
     },
     createdAt: {
         type: Date
@@ -64,6 +66,6 @@ const User = new SimpleSchema({
         optional: true,
         blackbox: true
     }
-});
+},{tracker: Tracker});
 
 export {User as user, UserProfile as userProfile}

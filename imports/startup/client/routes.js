@@ -10,7 +10,7 @@ import '../../ui/pages/home/home.js';
 import '../../ui/pages/login/login.js';
 import '../../ui/pages/not-found/not-found.js';
 
-FlowRouter.triggers.enter([AccountsTemplates.ensureSignedIn]);
+// FlowRouter.triggers.enter([AccountsTemplates.ensureSignedIn]);
 
 
 // Set up all routes in the app
@@ -27,18 +27,11 @@ FlowRouter.notFound = {
   },
 };
 
-AccountsTemplates.configureRoute('signIn', {
-  layoutType: 'blaze',
+FlowRouter.route('/login', {
   name: 'App.login',
-  path: '/login',
-  template: 'App_login',
-  layoutTemplate: 'App_body',
-  layoutRegions: {
-    nav: 'nav',
-    footer: 'footer'
+  action() {
+    BlazeLayout.render('App_body', { nav: 'nav', main: 'login', footer:'footer' });
   },
-  contentRegion: 'main',
-  redirect: '/'
 });
 
 
