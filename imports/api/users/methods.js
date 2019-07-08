@@ -15,7 +15,7 @@ const argSchema = new SimpleSchema( user, { check });
 Meteor.methods({
     addUser(obj) {
         argSchema.validate(obj);
+        Meteor.user().insert(obj);
 
-        // Now do other method stuff knowing that obj satisfies the schema
     },
 });

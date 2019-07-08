@@ -7,7 +7,7 @@ import '../../ui/components/nav/nav.js';
 import '../../ui/components/footer/footer.js';
 
 import '../../ui/pages/home/home.js';
-import '../../ui/pages/login/login.js';
+import '../../ui/pages/signup/signup.js';
 import '../../ui/pages/not-found/not-found.js';
 
 // FlowRouter.triggers.enter([AccountsTemplates.ensureSignedIn]);
@@ -27,10 +27,10 @@ FlowRouter.notFound = {
   },
 };
 
-FlowRouter.route('/login', {
-  name: 'App.login',
+FlowRouter.route('/sign-up', {
+  name: 'App.signup',
   action() {
-    BlazeLayout.render('App_body', { nav: 'nav', main: 'login', footer:'footer' });
+    BlazeLayout.render('App_body', { nav: 'nav', main: 'signup', footer:'footer' });
   },
 });
 

@@ -1,5 +1,6 @@
 import SimpleSchema from "simpl-schema";
 
+SimpleSchema.extendOptions(['autoform']);
 
 const UserProfile = new SimpleSchema({
     discord: {
@@ -22,7 +23,8 @@ const User = new SimpleSchema({
     },
     email: {
         type: Object,
-        optional: true
+        optional: true,
+
     },
     "email.address": {
         type: String,
@@ -37,7 +39,15 @@ const User = new SimpleSchema({
     MD: {
         type: Object,
         label: "NOT WORKING: Mangadex Integration",
-        optional: true
+        optional: true,
+
+    },
+    "MD.use": {
+        type: Boolean,
+        label: "NOT WORKING: Mangadex Integration",
+        // autoform: {
+        //     type: "checkbox"
+        // }
     },
     "MD.name": {
         type: String,
