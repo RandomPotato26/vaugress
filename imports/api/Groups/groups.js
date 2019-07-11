@@ -4,11 +4,10 @@ import { group } from "../schemas/s_group.js";
 import { user } from "../schemas/s_user.js";
 
 
-let Groups = new Mongo.Collection('groups');
+let groups = new Mongo.Collection('groups');
 
-Groups.schema = group;
-Groups.attachSchema(Groups.schema);
+// groups.schema = group;
+// groups.attachSchema(groups.schema);
 
-
-export {Groups as groups};
+export {groups};
 

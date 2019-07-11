@@ -6,5 +6,3 @@ AutoForm.addInputType("sem-checkbox", {
         return !!this.is(":checked");
     },
 });
-
-AutoForm.add

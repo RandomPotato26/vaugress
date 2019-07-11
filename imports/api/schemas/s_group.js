@@ -28,7 +28,7 @@ const Wants = new SimpleSchema({
     },
     amount: {
         type: String,
-        minValue: 0,
+        min: 0,
     },
 });
 

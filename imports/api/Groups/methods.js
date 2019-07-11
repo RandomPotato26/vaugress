@@ -1,17 +1,15 @@
-
+import {groups} from "./groups";
 import { Meteor } from 'meteor/meteor';
 
 
 Meteor.methods({
-    'groups.insert'(title, url) {
-        return Links.insert({
-            url,
-            title,
-            createdAt: new Date(),
+    'groups.test'(tname) {
+        return groups.insert({
+            name: tname,
         });
     },
-    'groups.name'() {
-        return CollectionName.find({}, {fields: {'name':1}});
+    'groups.names'() {
+        return groups.find({}, {fields: {'name':1}});
     },
 });
 

@@ -7,6 +7,9 @@ import SimpleSchema from 'simpl-schema';
 
 // import './userTemplate.html'
 // import './useraccountTest.html'
+Meteor.call('groups.test');
+
+var names = Meteor.call('groups.names');
 
 AccountsTemplates.removeField('password');
 AccountsTemplates.removeField('email');
@@ -51,13 +54,25 @@ AccountsTemplates.addFields([
         _id: 'MDname',
         type: 'text',
         displayName: "Mangadex Name",
+        required: false,
     },
     {
         _id: 'MDlink',
         type: 'text',
-        regEx: /(https?:\/\/)?(mangadex\.(org)\/user)\/\d+.*/,
+        re: /(https?:\/\/)?(mangadex\.(org)\/user)\/\d+.*/,
+        errStr: 'Must be a link to a user',
         displayName: "Mangadex Link",
+        required: false,
     },
+    {
+        _id: 'group',
+        type: 'select',
+        displayName: "Group",
+        required: false,
+        select: names,
+    },
+
+
 
 
 ]);
