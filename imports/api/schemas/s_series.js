@@ -19,6 +19,9 @@ const Title = new SimpleSchema({
     }
 });
 const Series = new SimpleSchema({
+
+    title: Title,
+
     authors: {
         type: Array,
         minLength: 1
@@ -34,7 +37,16 @@ const Series = new SimpleSchema({
     'artists.$': {
         type: String,
     },
-    title: Title,
+    fonts: {
+        type: Array,
+        minLength: 0,
+        optional: true,
+    },
+    'fonts.$': {
+        type: String,
+        max: 30
+    },
+
 });
 
 export {Series as series}

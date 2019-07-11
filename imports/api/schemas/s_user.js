@@ -1,6 +1,8 @@
 import SimpleSchema from "simpl-schema";
 
+
 SimpleSchema.extendOptions(['autoform']);
+
 
 const UserProfile = new SimpleSchema({
     discord: {
@@ -20,6 +22,7 @@ const User = new SimpleSchema({
     username: {
         type: String,
         label: "Credit Name",
+        defaultValue: false
     },
     email: {
         type: Object,
@@ -38,16 +41,16 @@ const User = new SimpleSchema({
     //TODO: add mangadex integration
     MD: {
         type: Object,
-        label: "NOT WORKING: Mangadex Integration",
         optional: true,
 
     },
     "MD.use": {
         type: Boolean,
-        label: "NOT WORKING: Mangadex Integration",
-        // autoform: {
-        //     type: "checkbox"
-        // }
+        // label: "NOT WORKING: Mangadex Integration",
+        autoform: {
+            // type: "sem-checkbox"
+            label: false
+        }
     },
     "MD.name": {
         type: String,
@@ -71,11 +74,11 @@ const User = new SimpleSchema({
         optional: true,
         blackbox: true
     },
-    roles: {
-        type: Object,
-        optional: true,
-        blackbox: true
-    }
+    // roles: {
+    //     type: Object,
+    //     optional: true,
+    //     blackbox: true
+    // }
 },{tracker: Tracker});
 
 export {User as user, UserProfile as userProfile}

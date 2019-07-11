@@ -1,21 +1,6 @@
 <template name="signup">
+    <br>
     <div class="ui container form">
-        {{#autoForm  meteormethod="addUser" id="signup" type="method" schema=userTemplate}}
-            {{> afQuickField name='username'}}
-            {{> afQuickField name='email.address'}}
-            <div class="ui field">
-                <div class="ui checkbox">
-                    {{> afQuickField name='MD.use'}}
-                </div>
-            </div>
-
-            <div class="field">
-                <button type="submit" class="ui primary button">Submit</button>
-            </div>
-            <div class="ui checkbox">
-                <input type="checkbox" name="example">
-                <label>Make my profile visible</label>
-            </div>
-        {{/autoForm}}
+        {{> atForm}}
     </div>
 </template>

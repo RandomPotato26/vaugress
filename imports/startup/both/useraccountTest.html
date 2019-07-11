@@ -1,0 +1,7 @@
+<template name="useraccountTest">
+    <select id="at-field-{{_id}}" name="at-field-{{_id}}" data-something="{{options.someOption}}">
+        {{#each select}}
+            <option value="{{value}}">{{text}}</option>
+        {{/each}}
+    </select>
+</template>
