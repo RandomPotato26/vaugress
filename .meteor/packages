@@ -20,6 +20,7 @@ kadira:flow-router      # FlowRouter is a very simple router for Meteor
 kadira:blaze-layout     # Layout manager for blaze (works well with FlowRouter)
 less                    # Leaner CSS language
 
+msavin:mongol
 meteortesting:mocha               # A package for writing and running your meteor app and package tests with mocha
 johanbrook:publication-collector  # Test a Meteor publication by collecting its output
 juliancwirko:postcss@=1.2.0
@@ -29,10 +30,8 @@ useraccounts:semantic-ui
 accounts-password
 accounts-ui
 useraccounts:flow-routing
-msavin:mongol
 aldeed:template-extension
 useraccounts:unstyled
 aldeed:collection2
-alanning:roles
 aldeed:autoform
-useraccounts:bootstrap
+anychart:anychart

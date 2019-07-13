@@ -1,4 +1,5 @@
 import SimpleSchema from "simpl-schema";
+import {chapter} from "./s_chapter";
 
 const Title = new SimpleSchema({
     alias: {
@@ -46,7 +47,15 @@ const Series = new SimpleSchema({
         type: String,
         max: 30
     },
+    chapters: {
+        type: Array,
+        optional: true,
+        minLength: 0,
+    },
+    'chapters.$': {
+        type: chapter,
+    },
 
 });
 
-export {Series as series}
+export {Series as series, chapter}

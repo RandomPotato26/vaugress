@@ -1,4 +1,5 @@
 import SimpleSchema from "simpl-schema";
+import {series} from "./s_series";
 
 const Member = new SimpleSchema({
     ID: {
@@ -8,16 +9,6 @@ const Member = new SimpleSchema({
     username: {
         type: String,
         min: 3
-    },
-});
-
-const Series = new SimpleSchema({
-    ID: {
-        type: String,
-        regEx: /.{24}/
-    },
-    alias: {
-        type: String,
     },
 });
 
@@ -47,9 +38,11 @@ const Group = new SimpleSchema({
     },
     series: {
         type: Array,
+        optional: true
+
     },
     "series.$": {
-        type: Series
+        type: series,
     },
     discord: {
         type: String,
@@ -109,4 +102,4 @@ const Group = new SimpleSchema({
 
 });
 
-export {Group as group, Member as member, Series as series, Wants as wants};
+export {Group as group,};

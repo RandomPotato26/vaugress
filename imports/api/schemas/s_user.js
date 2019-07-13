@@ -74,11 +74,6 @@ const User = new SimpleSchema({
         optional: true,
         blackbox: true
     },
-    // roles: {
-    //     type: Object,
-    //     optional: true,
-    //     blackbox: true
-    // }
 },{tracker: Tracker});
 
 export {User as user, UserProfile as userProfile}

@@ -1,7 +1,9 @@
 
 import './signup.html';
 import {user} from "../../../api/schemas/s_user";
+import {groups} from "../../../api/groups/groups";
 
+console.log(Meteor.call('groups.size'));
 
 Template.signup.helpers({
     userTemplate(){
@@ -10,7 +12,6 @@ Template.signup.helpers({
 
 
 });
-
 
 
 Template.signup.onRendered = function() {

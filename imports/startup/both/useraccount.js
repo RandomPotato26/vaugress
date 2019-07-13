@@ -7,9 +7,8 @@ import SimpleSchema from 'simpl-schema';
 
 // import './userTemplate.html'
 // import './useraccountTest.html'
-Meteor.call('groups.test');
 
-var names = Meteor.call('groups.names');
+
 
 AccountsTemplates.removeField('password');
 AccountsTemplates.removeField('email');
@@ -41,7 +40,7 @@ AccountsTemplates.addFields([
         type: 'password',
         required: true,
         minLength: 6,
-        // re: /(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/,
+        re: /(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/,
         errStr: 'At least 1 digit, 1 lower-case and 1 upper-case',
     },
     {
@@ -66,10 +65,18 @@ AccountsTemplates.addFields([
     },
     {
         _id: 'group',
-        type: 'select',
+        type: 'text',
         displayName: "Group",
+        template: 'groupSelect',
         required: false,
-        select: names,
+    },
+    {
+        _id: 'discord',
+        type: 'text',
+        re: /.*#[0-9]{4}/,
+        errStr: 'Must be a discord name e.g. Example#1234',
+        displayName: "Discord",
+        required: false,
     },
 
 
@@ -83,9 +90,7 @@ AccountsTemplates.addFields([
 
 
 AccountsTemplates.configure({
-
-
-    // Behavior
+        // Behavior
     confirmPassword: true,
     enablePasswordChange: true,
     // forbidClientAccountCreation: false, //TODO:set true on release

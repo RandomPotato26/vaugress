@@ -1,3 +1,3 @@
 // Register your apis here
 
-import '../../api/Groups/methods.js';
+import '../../api/groups/server/publications.js';

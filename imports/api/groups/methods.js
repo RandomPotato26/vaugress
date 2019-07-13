@@ -1,16 +1,22 @@
 import {groups} from "./groups";
 import { Meteor } from 'meteor/meteor';
 
-
 Meteor.methods({
+    'groups.size'() {
+        return groups.rawDatabase().stats();
+    },
     'groups.test'(tname) {
         return groups.insert({
             name: tname,
         });
     },
-    'groups.names'() {
-        return groups.find({}, {fields: {'name':1}});
+    'groups.byID'(ID) {
+        return groups.findOne({_id: ID});
     },
+    'groups.nameByID'(ID) {
+        return groups.findOne({_id: ID}, {fields: {'name':1}});
+    },
+
 });
 
 
