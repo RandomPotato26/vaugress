@@ -19,7 +19,7 @@ Meteor.methods({
         }
         else{ throw new Meteor.Error('invalid form')}
     },
-    'series.getChapters'(ID){
+    'series.getAlias'(ID){
         return Series.findOne({ _id:ID }, {fields:{'title.alias':1}})
     }
 

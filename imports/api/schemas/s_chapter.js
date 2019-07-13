@@ -57,8 +57,11 @@ const RL = new SimpleSchema({
 //schema.label(fieldName)
 const Chapter = new SimpleSchema({
     number: { type: SimpleSchema.Integer, min: 0, required: true},
-    title: String,
-    volume: String,
+    title: {
+        type: String,
+        max: 30
+    },
+    volume: { type: SimpleSchema.Integer, min: 0},
     TL: role_base,
     PR: role_base,
     CL: role_base,
@@ -71,4 +74,6 @@ const Chapter = new SimpleSchema({
     tracker: Tracker
 });
 
-export {Chapter as chapter, role_base as role, RL as releaser};
+const simpleCh = Chapter.pick('number','title', 'volume');
+
+export {Chapter as chapter, role_base as role, RL as releaser, simpleCh};

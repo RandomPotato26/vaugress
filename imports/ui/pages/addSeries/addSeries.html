@@ -1,0 +1,31 @@
+<template name="addSeries">
+    <div class="ui container">
+        <div class="ui segment form">
+            {{#autoForm schema=SeriesSchema id="addSeries" type="method" meteormethod="series.add" validation="submitThenKeyup"}}
+                <div class="ui header">Title</div>
+                <div class="ui segment">
+                    {{> afQuickField name='title.alias'}}
+                    {{> afQuickField name='title.fullTitle'}}
+                    {{> afQuickField name='title.altTitle'}}
+                    {{> afQuickField name='title.rawTitle'}}
+                </div>
+                <div class="ui header">IDK dude</div>
+
+                <div class="ui segment">
+                <div class="ui horizontal segments">
+                    <div class="ui segment">
+                        {{> afQuickField name='authors'}}
+                    </div>
+                    <div class="ui segment">
+                        {{> afQuickField name='artists'}}
+                    </div>
+                </div>
+            </div>
+            <div class="ui segment">
+                {{> afQuickField name='fonts'}}
+            </div>
+                <button type="submit" class="ui button primary">Add</button>
+            {{/autoForm}}
+        </div>
+    </div>
+</template>

@@ -1,5 +1,7 @@
 //Templates
 import '../../ui/components/groupSelect/groupSelect.js';
+import '../../ui/components/afArraySem/afArrayField_sem.js';
+
 
 //Components
 import '../../ui/layouts/body/body.js';
@@ -11,3 +13,4 @@ import '../../ui/pages/home/home.js';
 import '../../ui/pages/signup/signup.js';
 import '../../ui/pages/not-found/not-found.js';
 import '../../ui/pages/addGroup/addGroup.js';
+import '../../ui/pages/addSeries/addSeries.js';

@@ -3,8 +3,7 @@ import {series} from "../schemas/s_series";
 
 let Series = new Mongo.Collection('series');
 
-Series.attachSchema(series);
-
+// Series.attachSchema(series);
 
 
 export {Series};

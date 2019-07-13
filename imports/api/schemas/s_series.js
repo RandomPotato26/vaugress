@@ -1,21 +1,30 @@
 import SimpleSchema from "simpl-schema";
 
+
 const Title = new SimpleSchema({
     alias: {
         type: String,
-        min: 1
+        min: 1,
+        max: 15,
+        optional: true
     },
     fullTitle: {
         type: String,
+        max: 30,
         min: 1
     },
     altTitle: {
         type: String,
         min: 1,
+        max: 30,
+        optional: true
+
     },
     rawTitle: {
         type: String,
         min: 1,
+        max: 30,
+        optional: true
     }
 });
 const Series = new SimpleSchema({
