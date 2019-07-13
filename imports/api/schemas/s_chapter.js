@@ -2,24 +2,32 @@ import SimpleSchema from "simpl-schema";
 
 const role_base = new SimpleSchema({
 
-    assign_name: {
+    assigned: {
         type: Array,
         label: "Credit Name",
         optional: true
     },
-    'assign_name.$': String,
-    assign_date: {
+    'assigned.$.name': String,
+    'assigned.$.ID': {
+        type: String,
+        regEx: SimpleSchema.RegEx.Id,
+    },
+    assignDate: {
         type: Date,
         label: "Date Assigned",
         optional: true
     },
-    complete_name: {
+    complete: {
         type: Array,
         label: "Credit Name",
         optional: true
     },
-    'complete_name.$': String,
-    complete_date: {
+    'complete.$.name': String,
+    'complete.$.ID': {
+        type: String,
+        regEx: SimpleSchema.RegEx.Id,
+    },
+    completeDate: {
         type: Date,
         label: "Date Assigned",
         optional: true
@@ -59,7 +67,8 @@ const Chapter = new SimpleSchema({
     RL: RL
 
 },{
-    requiredByDefault: false
+    requiredByDefault: false,
+    tracker: Tracker
 });
 
 export {Chapter as chapter, role_base as role, RL as releaser};

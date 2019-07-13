@@ -10,3 +10,4 @@ import '../../ui/components/footer/footer.js';
 import '../../ui/pages/home/home.js';
 import '../../ui/pages/signup/signup.js';
 import '../../ui/pages/not-found/not-found.js';
+import '../../ui/pages/addGroup/addGroup.js';

@@ -11,6 +11,13 @@ FlowRouter.route('/', {
   },
 });
 
+FlowRouter.route('/add-group', {
+  name: 'App.addGroup',
+  action() {
+    BlazeLayout.render('App_body', { nav: 'nav', main: 'addGroup', footer:'footer' });
+  },
+});
+
 FlowRouter.notFound = {
   action() {
     BlazeLayout.render('App_body', { main: 'App_notFound' });

@@ -1,0 +1,20 @@
+<template name="addGroup">
+    <div class="ui container">
+        <div class="ui form">
+            {{#autoForm schema=GroupSchema id="addGroup" type="method" meteormethod="groups.add" validation="submitThenKeyup"}}
+
+                {{> afQuickField name='name'}}
+                {{> afQuickField name='discord'}}
+                {{> afQuickField name='mangadex'}}
+            <h5>none of these work for now</h5> <!-- TODO: make these do things-->
+                {{> afQuickField name='relabelAssign'}}
+                {{> afQuickField name='allowSelfAssign'}}
+                {{> afQuickField name='allowAutoAssign'}}
+                {{> afQuickField name='combineClWithRd'}}
+                {{> afQuickField name='QC'}}
+
+                <button type="submit" class="ui button primary">Insert</button>
+            {{/autoForm}}
+        </div>
+    </div>
+</template>

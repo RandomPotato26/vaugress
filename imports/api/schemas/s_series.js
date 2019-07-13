@@ -1,22 +1,21 @@
 import SimpleSchema from "simpl-schema";
-import {chapter} from "./s_chapter";
 
 const Title = new SimpleSchema({
     alias: {
         type: String,
-        minLength: 1
+        min: 1
     },
     fullTitle: {
         type: String,
-        minLength: 1
+        min: 1
     },
     altTitle: {
         type: String,
-        minLength: 1,
+        min: 1,
     },
     rawTitle: {
         type: String,
-        minLength: 1,
+        min: 1,
     }
 });
 const Series = new SimpleSchema({
@@ -25,22 +24,22 @@ const Series = new SimpleSchema({
 
     authors: {
         type: Array,
-        minLength: 1
+        minCount: 1
     },
-    'author.$': {
+    'authors.$': {
         type: String,
     },
     artists: {
         type: Array,
         optional: true,
-        minLength: 1
+        minCount: 1
     },
     'artists.$': {
         type: String,
     },
     fonts: {
         type: Array,
-        minLength: 0,
+        minCount: 0,
         optional: true,
     },
     'fonts.$': {
@@ -50,12 +49,13 @@ const Series = new SimpleSchema({
     chapters: {
         type: Array,
         optional: true,
-        minLength: 0,
+        minCount: 0,
     },
     'chapters.$': {
-        type: chapter,
+        type: String,
+        regEx: SimpleSchema.RegEx.Id,
     },
 
-});
+},{tracker: Tracker});
 
-export {Series as series, chapter}
+export {Series as series}

@@ -1,5 +1,4 @@
 import SimpleSchema from "simpl-schema";
-import {series} from "./s_series";
 
 const Member = new SimpleSchema({
     ID: {
@@ -32,6 +31,7 @@ const Group = new SimpleSchema({
     },
     members: {
         type: Array,
+        optional: true
     },
     "members.$": {
         type: Member
@@ -42,7 +42,8 @@ const Group = new SimpleSchema({
 
     },
     "series.$": {
-        type: series,
+        type: String,
+        regEx: SimpleSchema.RegEx.Id,
     },
     discord: {
         type: String,
@@ -58,12 +59,6 @@ const Group = new SimpleSchema({
         type: String,
         regEx: SimpleSchema.RegEx.Url,
         optional: true
-    },
-    status: {
-        type: String,
-        label: "Current Status",
-        optional: true,
-        allowedValues: ['Assigned', 'Taken','Working', 'Complete']
     },
     relabelAssign: {
         type: Boolean,
@@ -100,6 +95,6 @@ const Group = new SimpleSchema({
         type: Wants
     },
 
-});
+},{tracker: Tracker});
 
 export {Group as group,};
