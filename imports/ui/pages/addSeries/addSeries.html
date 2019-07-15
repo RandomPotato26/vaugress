@@ -1,7 +1,7 @@
 <template name="addSeries">
     <div class="ui container">
         <div class="ui segment form">
-            {{#autoForm schema=SeriesSchema id="addSeries" type="method" meteormethod="series.add" validation="submitThenKeyup"}}
+            {{#autoForm schema=SeriesSchema id="addSeries" validation="submitThenKeyup"}}
                 <div class="ui header">Title</div>
                 <div class="ui segment">
                     {{> afQuickField name='title.alias'}}
@@ -24,6 +24,9 @@
             <div class="ui segment">
                 {{> afQuickField name='fonts'}}
             </div>
+                <div class="ui segment">
+                    {{> afQuickField name='groups.0' options=groupOptions}}
+                </div>
                 <button type="submit" class="ui button primary">Add</button>
             {{/autoForm}}
         </div>

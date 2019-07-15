@@ -1,5 +1,6 @@
 import SimpleSchema from "simpl-schema";
 
+SimpleSchema.extendOptions(['autoform']);
 
 const Title = new SimpleSchema({
     alias: {
@@ -30,6 +31,15 @@ const Title = new SimpleSchema({
 const Series = new SimpleSchema({
 
     title: Title,
+
+    groups: {
+        type: Array,
+        minCount: 1
+    },
+    'groups.$': {
+        type: String,
+        regEx: SimpleSchema.RegEx.Id,
+    },
 
     authors: {
         type: Array,

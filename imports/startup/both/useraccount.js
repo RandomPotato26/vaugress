@@ -8,7 +8,11 @@ import SimpleSchema from 'simpl-schema';
 // import './userTemplate.html'
 // import './useraccountTest.html'
 
-
+Meteor.users.deny({
+    update: function() {
+        return true;
+    }
+});
 
 AccountsTemplates.removeField('password');
 AccountsTemplates.removeField('email');

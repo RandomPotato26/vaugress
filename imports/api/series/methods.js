@@ -21,6 +21,9 @@ Meteor.methods({
     },
     'series.getAlias'(ID){
         return Series.findOne({ _id:ID }, {fields:{'title.alias':1}})
+    },
+    'series.byFullTitle'(title){
+        return Series.findOne({ 'title.fullTitle':title }, {fields:{'_id':1}})
     }
 
 });

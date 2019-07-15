@@ -3,7 +3,7 @@ import SimpleSchema from "simpl-schema";
 const Member = new SimpleSchema({
     ID: {
         type: String,
-        regEx: /.{24}/
+        regEx: SimpleSchema.RegEx.Id,
     },
     username: {
         type: String,

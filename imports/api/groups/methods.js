@@ -18,6 +18,9 @@ Meteor.methods({
         }
         else{ throw new Meteor.Error('invalid form')}
     },
+    'groups.addSeries'(groupID, seriesID) {
+        groups.update({_id:groupID}, {$push:{series: seriesID}},);
+    },
     'groups.size'() {
         return groups.rawDatabase().stats();
     },

@@ -4,5 +4,9 @@ import {Series} from "../series";
 //     return groups.find();
 // });
 Meteor.publish('series.names', function () {
-    return Series.find({}, {fields: {'title.alias':1, '_id':1, 'authors':1 }});
+    return Series.find({}, {fields: {'title.alias':1, '_id':1, 'authors':1, 'groups':1 }});
 });
+// $or: [
+//     { private: { $ne: true } },
+//     { owner: this.userId },
+// ],
