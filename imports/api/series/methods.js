@@ -24,7 +24,11 @@ Meteor.methods({
     },
     'series.byFullTitle'(title){
         return Series.findOne({ 'title.fullTitle':title }, {fields:{'_id':1}})
-    }
+    },
+    'series.addChapter'(seriesID, chapterID) {
+        console.log(seriesID, chapterID);
+        Series.update({_id:seriesID}, {$push:{chapters: chapterID}},);
+    },
 
 });
 

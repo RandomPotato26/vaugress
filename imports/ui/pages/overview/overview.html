@@ -1,7 +1,47 @@
 <template name="overview">
     <div class="ui container">
-        <div class="ui table">
+        {{#with getGroups}}
+            {{#each group in getGroups}}
+                <div class="ui segment">
+                    <div class="ui header">{{group.name}}</div>
+                    <div class="ui top right attached label">Total: {{totalSeries (group.series)}}</div>
+                    {{#with getSeries (group.series)}}
+                        {{#each series in getSeries (group.series)}}
+                            <div class="ui segment">
+                                {{#if (series.title.alias)}}
+                                    <div class="ui medium header">{{series.title.alias}}</div>
+                                    <div class="ui label">{{series.title.fullTitle}}</div>
+                                    {{#if (series.title.altTitle)}}
+                                        <div class="ui label">{{series.title.altTitle}}</div>
+                                    {{/if}}
+                                    {{#if (series.title.rawTitle)}}
+                                        <div class="ui label">{{series.title.rawTitle}}</div>
+                                    {{/if}}
+                                {{else}}
+                                    <div class="ui medium header">{{series.title.fullTitle}}</div>
+                                    {{#if (series.title.altTitle)}}
+                                        <div class="ui label">{{series.title.altTitle}}</div>
+                                    {{/if}}
+                                    {{#if (series.title.rawTitle)}}
+                                        <div class="ui label">{{series.title.rawTitle}}</div>
+                                    {{/if}}
+                                {{/if}}
+                                {{print (series.chapters)}}
+                                {{>chapterTable chapters=series.chapters}}
 
-        </div>
+                            </div>
+                        {{/each}}
+                    {{else}}
+                        <div class="ui content"> group has no series</div>
+                    {{/with }}
+                </div>
+            {{/each}}
+
+        {{else}}
+            <div class="ui segment">
+                <div class="ui active centered inline loader"> </div>
+            </div>
+        {{/with}}
+
     </div>
 </template>

@@ -1,0 +1,20 @@
+<template name="addChapter">
+    <div class="ui container">
+        <div class="ui form segment">
+            {{#autoForm schema=ChapterSchema id="addChapter" validation="submitThenKeyup"}}
+                <div class="ui segment">
+
+                    {{> afQuickField name='number'}}
+                    {{> afQuickField name='title'}}
+                    {{> afQuickField name='volume'}}
+                </div>
+            <div class="ui segment">
+                {{> afQuickField name='series' options=seriesOptions}}
+            </div>
+
+                <button type="submit" class="ui button primary">Add</button>
+            {{/autoForm}}
+
+        </div>
+    </div>
+</template>

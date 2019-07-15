@@ -11,6 +11,15 @@ FlowRouter.route('/', {
   },
 });
 
+
+
+FlowRouter.route('/overview', {
+  name: 'App.addGroup',
+  action() {
+    BlazeLayout.render('App_body', { nav: 'nav', main: 'overview', footer:'footer' });
+  },
+});
+
 FlowRouter.route('/add-group', {
   name: 'App.addGroup',
   action() {
@@ -22,6 +31,13 @@ FlowRouter.route('/add-series', {
   name: 'App.addSeries',
   action() {
     BlazeLayout.render('App_body', { nav: 'nav', main: 'addSeries', footer:'footer' });
+  },
+});
+
+FlowRouter.route('/add-chapter', {
+  name: 'App.addSeries',
+  action() {
+    BlazeLayout.render('App_body', { nav: 'nav', main: 'addChapter', footer:'footer' });
   },
 });
 

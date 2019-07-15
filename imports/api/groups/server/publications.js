@@ -5,5 +5,5 @@ import {groups} from "../groups";
 //     return groups.find();
 // });
 Meteor.publish('groups.names', function () {
-    return groups.find({}, {fields: {'name':1, '_id':1, 'series.name':1 }});
+    return groups.find({}, {fields: {'name':1, '_id':1, 'series':1 }});
 });

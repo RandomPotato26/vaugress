@@ -74,6 +74,14 @@ const Series = new SimpleSchema({
         type: String,
         regEx: SimpleSchema.RegEx.Id,
     },
+    volumes: {
+        type: Array,
+        optional: true,
+        minCount: 0,
+    },
+    'volumes.$': {
+        type: SimpleSchema.Integer,
+    },
 
 },{tracker: Tracker});
 

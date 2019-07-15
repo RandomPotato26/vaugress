@@ -1,10 +1,7 @@
 <template name="nav">
     <div class="ui grey secondary pointing menu">
-        <a href="/" class="item">
+        <a href="/overview" class="item">
             Overview
-        </a>
-        <a class="item">
-            Series
         </a>
         <a href="/add-group" class="item">
             Add Group
@@ -13,7 +10,13 @@
         <a href="/add-series" class="item">
             Add Series
         </a>
+        <a href="/add-chapter" class="item">
+            Add Chapter
+        </a>
         <div class="right menu">
+                <a href="/sign-up" class="item">
+                    Sign Up
+                </a>
             <div class="item" >
                 {{> atNavButton}} <!-- TODO: custom template -->
             </div>

@@ -11,6 +11,12 @@ Template.addSeries.onCreated(function bodyOnCreated() {
     Meteor.subscribe('groups.names');
 });
 
+Template.addSeries.onRendered(function () {
+    $('.ui.dropdown')
+        .dropdown()
+    ;
+});
+
 Template.addSeries.helpers({
     SeriesSchema: series,
     groupOptions: function () {
@@ -20,10 +26,6 @@ Template.addSeries.helpers({
     }
 });
 
-
-if(Meteor.isClient){
-    AutoForm.debug();
-}
 
 AutoForm.hooks({
     addSeries: {

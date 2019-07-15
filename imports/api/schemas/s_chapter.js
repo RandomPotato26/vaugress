@@ -7,6 +7,7 @@ const role_base = new SimpleSchema({
         label: "Credit Name",
         optional: true
     },
+    'assigned.$': Object,
     'assigned.$.name': String,
     'assigned.$.ID': {
         type: String,
@@ -22,6 +23,7 @@ const role_base = new SimpleSchema({
         label: "Credit Name",
         optional: true
     },
+    'complete.$': Object,
     'complete.$.name': String,
     'complete.$.ID': {
         type: String,
@@ -56,7 +58,13 @@ const RL = new SimpleSchema({
 
 //schema.label(fieldName)
 const Chapter = new SimpleSchema({
+    _id:{
+      type: String,
+      regEx: SimpleSchema.RegEx.Id,
+    },
+
     number: { type: SimpleSchema.Integer, min: 0, required: true},
+    series: {type: String, regEx: SimpleSchema.RegEx.Id},
     title: {
         type: String,
         max: 30

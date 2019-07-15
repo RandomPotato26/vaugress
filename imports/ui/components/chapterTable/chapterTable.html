@@ -1,0 +1,25 @@
+<template name="chapterTable">
+    {{#if chapters}}
+        <table class="ui small compact celled table">
+            <thead>
+                <tr>
+                    <th>Chapter</th>
+                    <th>vol</th>
+                    <th>Title</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each chapter in getChapter (chapters)}}
+                    {{#with chapter}}
+
+                        <tr>
+                            <td data-label="Chapter">{{number}}</td>
+                            <td data-label="vol">{{volume}}</td>
+                            <td data-label="Title">{{title}}</td>
+                        </tr>
+                    {{/with}}
+                {{/each}}
+            </tbody>
+        </table>
+    {{/if}}
+</template>
