@@ -6,12 +6,12 @@ const Title = new SimpleSchema({
     alias: {
         type: String,
         min: 1,
-        max: 15,
+        max: 30,
         optional: true
     },
     fullTitle: {
         type: String,
-        max: 30,
+        max: 100,
         min: 1
     },
     altTitle: {
@@ -61,6 +61,7 @@ const Series = new SimpleSchema({
         minCount: 0,
         optional: true,
     },
+    // font tags
     'fonts.$': {
         type: String,
         max: 30

@@ -87,9 +87,8 @@ AccountsTemplates.addFields([
 
 
 ]);
-//TODO: remove on release
 
-// Meteor.users.attachSchema(user);
+Meteor.users.attachSchema(user);
 
 
 

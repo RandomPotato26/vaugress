@@ -1,4 +1,3 @@
 // Import client startup through a single index entry point
-
-import './routes.js';
-import './register-templates.js'
+// import './register-templates.js'
+// import './routes.js';

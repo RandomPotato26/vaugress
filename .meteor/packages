@@ -26,9 +26,7 @@ johanbrook:publication-collector  # Test a Meteor publication by collecting its 
 juliancwirko:postcss@=1.2.0
 semantic:ui
 accounts-base
-useraccounts:semantic-ui
 accounts-password
-accounts-ui
 useraccounts:flow-routing
 aldeed:template-extension
 useraccounts:unstyled
@@ -37,3 +35,5 @@ aldeed:autoform
 anychart:anychart
 promise
 random
+force-ssl
+
