@@ -1,6 +1,6 @@
 <template name="afArrayField_sem">
 
-    <div class="ui  vertical secondary menu">
+    <div class="ui vertical secondary menu">
         <div class="ui item">{{afFieldLabelText name=this.atts.name}}
             {{#if afArrayFieldHasLessThanMaximum name=this.atts.name minCount=this.atts.minCount maxCount=this.atts.maxCount}}
                     <button type="button" class="ui positive label button basic compact autoform-add-item" data-autoform-field="{{this.atts.name}}" data-autoform-minCount="{{this.atts.minCount}}" data-autoform-maxCount="{{this.atts.maxCount}}"><i class="plus icon"></i></button>
@@ -14,12 +14,20 @@
         {{/if}}
             {{#afEachArrayItem name=this.atts.name minCount=this.atts.minCount maxCount=this.atts.maxCount}}
                 <div class="ui item autoform-array-item">
-                    <div class="ui action input">
+                    {{#if equals inputType "text"}}
+                        <div class="ui action input">
+                            {{> afQuickField name=this.name label=false}}
+                            {{#if afArrayFieldHasMoreThanMinimum name=../atts.name minCount=../atts.minCount maxCount=../atts.maxCount}}
+                                <button type="button" class="ui very compact basic negative button autoform-remove-item"><i class="minus icon"></i></button>
+                            {{/if}}
+                        </div>
+                        {{else if equals inputType "dropdown"}}
                         {{> afQuickField name=this.name label=false}}
-                        {{#if afArrayFieldHasMoreThanMinimum name=../atts.name minCount=../atts.minCount maxCount=../atts.maxCount}}
-                            <button type="button" class="ui very compact basic negative button autoform-remove-item"><i class="minus icon"></i></button>
-                        {{/if}}
-                    </div>
+                            {{#if afArrayFieldHasMoreThanMinimum name=../atts.name minCount=../atts.minCount maxCount=../atts.maxCount}}
+                                <button type="button" class="ui very compact basic negative button autoform-remove-item"><i class="minus icon"></i></button>
+                            {{/if}}
+                    {{/if}}
+
                 </div>
             {{/afEachArrayItem}}
 

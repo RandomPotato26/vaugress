@@ -23,7 +23,7 @@ Template.addSeries.helpers({
         return groups.find().map(function (c) {
             return {label: c.name, value: c._id};
         });
-    }
+    },
 });
 
 

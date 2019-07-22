@@ -1,24 +1,49 @@
 <template name="addGroup">
     <div class="ui container">
         <div class="ui form segment">
-                {{#autoForm schema=GroupSchema id="addGroup" type="method" meteormethod="groups.add" validation="submitThenKeyup"}}
-            <div class="ui segment">
-
-                    {{> afQuickField name='name'}}
-                    {{> afQuickField name='discord'}}
-                    {{> afQuickField name='mangadex'}}
-            </div>
-                    <h5>none of these work for now</h5> <!-- TODO: make these do things-->
+            {{#autoForm schema=GroupSchema id="addGroup" type="method" meteormethod="groups.add" validation="submitThenKeyup"}}
                 <div class="ui segment">
-                    {{> afQuickField name='relabelAssign'}}
-                    {{> afQuickField name='allowSelfAssign'}}
-                    {{> afQuickField name='allowAutoAssign'}}
-                    {{> afQuickField name='combineClWithRd'}}
-                    {{> afQuickField name='QC'}}
-                </div>
 
-                    <button type="submit" class="ui button primary">Add</button>
-                {{/autoForm}}
+                        {{> afQuickField name='name'}}
+                        {{> afQuickField name='discord'}}
+                        {{> afQuickField name='mangadex'}}
+                </div>
+                <div class="ui toggle checkbox">
+                    <input type="checkbox" name="displayMore">
+                    <label>Display More Options</label>
+                </div>
+                {{#if isChecked}}
+                    <h5>none of these affect anything for now</h5> <!-- TODO: make these do things-->
+                    <div class="ui segment">
+                        <div class="ui relaxed divided list">
+                            <div class="item">
+                                {{> afQuickField name='relabelAssign'}}
+
+                            </div>
+                            <div class="item">
+                                {{> afQuickField name='allowSelfAssign'}}
+
+                            </div>
+                            <div class="item">
+                                {{> afQuickField name='allowAutoAssign'}}
+
+                            </div>
+                            <div class="item">
+                                {{> afQuickField name='combineClWithRd'}}
+
+                            </div>
+                            <div class="item">
+                                {{> afQuickField name='QC'}}
+
+                            </div>
+                        </div>
+                    </div>
+                {{else}}
+                    <div class="ui hidden divider"></div>
+                {{/if}}
+
+                <button type="submit" class="ui button primary">Add</button>
+            {{/autoForm}}
 
         </div>
     </div>

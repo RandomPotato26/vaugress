@@ -1,5 +1,8 @@
 import SimpleSchema from "simpl-schema";
 
+SimpleSchema.extendOptions(['autoform']);
+
+
 const role_base = new SimpleSchema({
 
     assigned: {

@@ -1,5 +1,8 @@
 import SimpleSchema from "simpl-schema";
 
+SimpleSchema.extendOptions(['autoform']);
+
+
 const Member = new SimpleSchema({
     ID: {
         type: String,
@@ -62,28 +65,54 @@ const Group = new SimpleSchema({
     },
     relabelAssign: {
         type: Boolean,
-        label: "Re-labels \"Assign\" to \"Taken\""
+        label: "Re-labels \"Assign\" to \"Taken\"",
+        defaultValue: false,
+        autoform: {
+            afFieldInput: {
+                type: "sem-checkbox",
+            }
+        }
     },
     allowSelfAssign: {
         type: Boolean,
         label: "Allows members to assign themselves tasks",
-        defaultValue: false
+        defaultValue: false,
+        autoform: {
+            afFieldInput: {
+                type: "sem-checkbox",
+            }
+        }
     },
     allowAutoAssign: {
         type: Boolean,
         label: "BETA, DOES NOTHING: members assigned tasks automatically",
         optional: true,
-        defaultValue: false
+        defaultValue: false,
+        autoform: {
+            afFieldInput: {
+                type: "sem-checkbox",
+            }
+        }
     },
     combineClWithRd: {
         type: Boolean,
         label: "Combine cleaning and redrawing as one role",
-        defaultValue: false
+        defaultValue: false,
+        autoform: {
+            afFieldInput: {
+                type: "sem-checkbox",
+            }
+        }
     },
     QC: {
         type: Boolean,
         label: "Use a Quality Control roll",
-        defaultValue: true
+        defaultValue: true,
+        autoform: {
+            afFieldInput: {
+                type: "sem-checkbox",
+            }
+        }
     },
 
     wantedRoles: {

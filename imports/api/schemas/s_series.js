@@ -58,13 +58,41 @@ const Series = new SimpleSchema({
     },
     fonts: {
         type: Array,
-        minCount: 0,
+        minCount: 1,
         optional: true,
     },
     // font tags
     'fonts.$': {
         type: String,
         max: 30
+    },
+    'fonts.$.name' : {
+        type: String,
+        max: 50
+    },
+    'fonts.$.tags' : {
+        type: Array,
+        maxCount: 5
+    },
+    'fonts.$.tags.$' : {
+        type: String,
+        maxCount: 50
+    },
+    glossary: {
+        type: Array,
+        optional: true,
+        minCount: 1,
+    },
+    'glossary.$': {
+        type: Object,
+    },
+    'glossary.$.key': {
+        type: String,
+        max: 50
+    },
+    'glossary.$.value': {
+        type: String,
+        max: 50
     },
     chapters: {
         type: Array,

@@ -1,0 +1,23 @@
+<template name="arraySelect">
+    <div class="ui five wide field">
+        <label for="groups"><b>{{displayName}}</b></label>
+        <div class="at-input">
+
+            <input id="at-field-group" type="hidden">
+
+            <select id="groups" class="ui search selection dropdown">
+                <option selected disabled>{{placeholder}}</option>
+                {{# each groupNameandID }}
+                    <option value="{{ this._id }}">{{ this.name }}</option>
+                {{/ each }}
+            </select>
+            <div class="ui basic red button">
+                Clear
+            </div>
+            {{#if hasError}}
+                <span class='red-text'>{{errorText}}</span>
+            {{/if}}
+        </div>
+    </div>
+    <div class="ui hidden divider"> </div>
+</template>

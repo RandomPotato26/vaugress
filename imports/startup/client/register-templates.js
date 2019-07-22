@@ -1,6 +1,8 @@
 //Templates
 import '../../ui/components/groupSelect/groupSelect.js';
 import '../../ui/components/afArraySem/afArrayField_sem.js';
+import '../../ui/components/CheckboxSem/Checkbox_sem.js';
+
 
 
 //Components
@@ -19,3 +21,4 @@ import '../../ui/pages/addGroup/addGroup.js';
 import '../../ui/pages/addSeries/addSeries.js';
 import '../../ui/pages/addChapter/addChapter.js';
 
+//af Templates
