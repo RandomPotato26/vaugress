@@ -8,6 +8,7 @@ import '../../ui/components/CheckboxSem/Checkbox_sem.js';
 //Components
 import '../../ui/layouts/body/body.js';
 import '../../ui/components/nav/nav.js';
+import '../../ui/components/accountButton/accountButton.js';
 import '../../ui/components/footer/footer.js';
 import '../../ui/components/chapterTable/chapterTable.js';
 

@@ -111,6 +111,6 @@ underscore@1.0.10
 url@1.2.0
 useraccounts:core@1.14.2
 useraccounts:flow-routing@1.14.2
-useraccounts:unstyled@1.14.2
+useraccounts:semantic-ui@1.14.2
 webapp@1.7.4
 webapp-hashing@1.0.9

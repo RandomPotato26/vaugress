@@ -29,7 +29,6 @@ accounts-base
 accounts-password
 useraccounts:flow-routing
 aldeed:template-extension
-useraccounts:unstyled
 aldeed:collection2
 aldeed:autoform
 anychart:anychart
@@ -38,3 +37,4 @@ random
 force-ssl
 
 session
+useraccounts:semantic-ui
