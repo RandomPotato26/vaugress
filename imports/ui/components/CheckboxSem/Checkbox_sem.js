@@ -4,6 +4,7 @@ AutoForm.addInputType('sem-checkbox', {
     template: 'Checkbox_sem',
     valueIn: this.value,
     valueOut: function () {
+        console.log(!!this.is(":checked"));
         return !!this.is(":checked");
     },
     contextAdjust: function (context) {

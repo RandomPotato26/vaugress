@@ -1,18 +1,19 @@
 <template name="nav">
-    <div class="ui grey secondary pointing menu">
-        <a href="/overview" class="item">
+    <div class="ui grey secondary pointing tabular menu">
+        <a href="/overview" class="{{#if equals CurrentTab '/overview'}} active{{/if}} item">
             Overview
         </a>
-        <a href="/add-group" class="item">
+        <a href="/add-group" class="{{#if equals CurrentTab '/add-group'}} active{{/if}} item">
             Add Group
         </a>
         <!-- TODO: dropdown template-->
-        <a href="/add-series" class="item">
+        <a href="/add-series" class="{{#if equals CurrentTab '/add-series'}} active{{/if}} item">
             Add Series
         </a>
-        <a href="/add-chapter" class="item">
+        <a href="/add-chapter" class="{{#if equals CurrentTab '/add-chapter'}} active{{/if}} item">
             Add Chapter
         </a>
+
         <div class="right menu">
             <div class="item" >
                 {{> accountButton}} <!-- TODO: custom template -->

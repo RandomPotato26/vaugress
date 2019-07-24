@@ -20,7 +20,6 @@ Template.addGroup.events({
         if(event.target.name === 'displayMore'){
             var x = event.target.checked;
             Session.set("statevalue", x);
-            console.log(Session.get("statevalue"));
         }
 
     }

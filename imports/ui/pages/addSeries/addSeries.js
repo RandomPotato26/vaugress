@@ -26,7 +26,7 @@ Template.addSeries.helpers({
     },
 });
 
-
+AutoForm.debug();
 AutoForm.hooks({
     addSeries: {
         onSubmit: function (insertDoc, updateDoc, currentDoc) {

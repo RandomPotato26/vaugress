@@ -12,7 +12,9 @@
                     <input type="checkbox" name="displayMore">
                     <label>Display More Options</label>
                 </div>
-                {{#if isChecked}}
+
+                <div style="{{#unless isChecked}} display: none {{/unless}}">
+
                     <h5>none of these affect anything for now</h5> <!-- TODO: make these do things-->
                     <div class="ui segment">
                         <div class="ui relaxed divided list">
@@ -38,9 +40,10 @@
                             </div>
                         </div>
                     </div>
-                {{else}}
-                    <div class="ui hidden divider"></div>
-                {{/if}}
+
+                </div>
+                <div class="ui hidden divider"></div>
+
 
                 <button type="submit" class="ui button primary">Add</button>
             {{/autoForm}}
