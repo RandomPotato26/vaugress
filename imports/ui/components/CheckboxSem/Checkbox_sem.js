@@ -2,10 +2,14 @@ import './Checkbox_sem.html'
 
 AutoForm.addInputType('sem-checkbox', {
     template: 'Checkbox_sem',
-    valueIn: this.value,
     valueOut: function () {
-        console.log(!!this.is(":checked"));
         return !!this.is(":checked");
+    },
+    valueConverters: {
+        "string": AutoForm.valueConverters.booleanToString,
+        "stringArray": AutoForm.valueConverters.booleanToStringArray,
+        "number": AutoForm.valueConverters.booleanToNumber,
+        "numberArray": AutoForm.valueConverters.booleanToNumberArray
     },
     contextAdjust: function (context) {
         if (context.value === true) {
@@ -15,4 +19,26 @@ AutoForm.addInputType('sem-checkbox', {
         delete context.atts.required;
         return context;
     }
+
+});
+
+Template.Checkbox_sem.onRendered(function() {
+    this.$('ui.checkbox').checkbox();
+});
+
+
+AutoForm.debug();
+Template.Checkbox_sem.helpers({
+    forceBoolean: function(input){
+        console.log(input !== 'on');
+        return input !== 'on';
+    },
+    isChecked: function () {
+        console.log($('.ui.checkbox').checkbox('is checked'));
+        return false;
+    },
+   print: function (a) {
+
+       console.log(a);
+   }
 });

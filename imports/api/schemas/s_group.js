@@ -67,52 +67,52 @@ const Group = new SimpleSchema({
         type: Boolean,
         label: "Re-labels \"Assign\" to \"Taken\"",
         defaultValue: false,
-        autoform: {
-            afFieldInput: {
-                type: "sem-checkbox",
-            }
-        }
+        // autoform: {
+        //     afFieldInput: {
+        //         type: "sem-checkbox",
+        //     }
+        // }
     },
     allowSelfAssign: {
         type: Boolean,
         label: "Allows members to assign themselves tasks",
         defaultValue: false,
-        autoform: {
-            afFieldInput: {
-                type: "sem-checkbox",
-            }
-        }
+        // autoform: {
+        //     afFieldInput: {
+        //         type: "sem-checkbox",
+        //     }
+        // }
     },
     allowAutoAssign: {
         type: Boolean,
         label: "BETA, DOES NOTHING: members assigned tasks automatically",
         optional: true,
         defaultValue: false,
-        autoform: {
-            afFieldInput: {
-                type: "sem-checkbox",
-            }
-        }
+        // autoform: {
+        //     afFieldInput: {
+        //         type: "sem-checkbox",
+        //     }
+        // }
     },
     combineClWithRd: {
         type: Boolean,
         label: "Combine cleaning and redrawing as one role",
         defaultValue: false,
-        autoform: {
-            afFieldInput: {
-                type: "sem-checkbox",
-            }
-        }
+        // autoform: {
+        //     afFieldInput: {
+        //         type: "sem-checkbox",
+        //     }
+        // }
     },
     QC: {
         type: Boolean,
         label: "Use a Quality Control roll",
         defaultValue: true,
-        autoform: {
-            afFieldInput: {
-                type: "sem-checkbox",
-            }
-        }
+        // autoform: {
+        //     afFieldInput: {
+        //         type: "sem-checkbox",
+        //     }
+        // }
     },
 
     wantedRoles: {

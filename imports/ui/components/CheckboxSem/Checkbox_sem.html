@@ -1,7 +1,6 @@
 <template name="Checkbox_sem">
-    <br>
     <div class="ui checkbox">
-        <input  type="checkbox" value={{this.value}} {{atts}} />
-        <label></label>
+        <input type="checkbox" value="{{this.value}}" {{atts}} /> <label>{{afFieldLabelText name=this.name}}</label>
+        {{isChecked}}
     </div>
 </template>

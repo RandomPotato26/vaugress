@@ -38,10 +38,6 @@ AutoForm.hooks({
 
             callWithPromise("chapters.add", insertDoc)
                 .then((res) => callWithPromise("series.addChapter", insertDoc.series, newID));
-
-
-
-
             // AutoForm.resetForm('addSeries');
 
             this.done();
