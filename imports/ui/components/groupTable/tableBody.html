@@ -1,0 +1,31 @@
+<template name="tableBody" >
+    {{#if series}}
+        <div class="ui segment">
+            <div class="ui header">{{series.name}}</div>
+            <table class="ui small compact celled table">
+                <thead>
+                <tr>
+                    <th>Chapter</th>
+                    <th>vol</th>
+                    <th>Title</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                {{#each chapter in getChapters (series._id)}}
+                    {{#with chapter}}
+                        {{#if chapter}}
+                            <tr>
+                                <td data-label="Chapter">{{TL.assignName}}</td>
+                                <td data-label="vol">{{volume}}</td>
+                                <td data-label="Title">{{title}}</td>
+                            </tr>
+                        {{/if}}
+
+                    {{/with}}
+                {{/each}}
+                </tbody>md
+            </table>
+        </div>
+    {{/if}}
+</template>

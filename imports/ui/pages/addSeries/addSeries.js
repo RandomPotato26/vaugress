@@ -5,6 +5,7 @@ import {Meteor} from "meteor/meteor";
 
 import './addSeries.html'
 import {groups} from "../../../api/groups/groups";
+import {callWithPromise} from "../../../api/promise";
 
 Template.addSeries.onCreated(function bodyOnCreated() {
     Meteor.subscribe('series.names');//TODO: remove is useless beside testing
@@ -31,14 +32,7 @@ AutoForm.hooks({
     addSeries: {
         onSubmit: function (insertDoc, updateDoc, currentDoc) {
 
-            function callWithPromise(method, param1, param2) {
-                return new Promise((resolve, reject) => {
-                    Meteor.call(method, param1, param2, (err, res) => {
-                        if (err) reject('Something went wrong');
-                        resolve(res);
-                    });
-                });
-            }
+
 
             callWithPromise("series.add", insertDoc)
                 .then((res) => callWithPromise("series.byFullTitle", insertDoc.title.fullTitle))

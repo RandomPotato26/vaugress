@@ -30,7 +30,8 @@ const Group = new SimpleSchema({
 
     name: {
         type: String,
-        min: 3
+        min: 3,
+        max: 60
     },
     members: {
         type: Array,

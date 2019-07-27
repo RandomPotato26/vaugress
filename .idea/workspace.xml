@@ -2,15 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a186933-e3b7-4d89-bd4c-c04f41e53b6d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/imports/api/promise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/ui/components/groupTable/tableBody.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/ui/components/groupTable/tableBody.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/ui/pages/group/group.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/ui/pages/group/group.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/ui/pages/group/private.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/ui/pages/group/private.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/ui/pages/group/public.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imports/ui/pages/group/public.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.meteor/packages" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/packages" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.meteor/versions" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/versions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/api/chapters/chapters.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/api/chapters/chapters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/api/chapters/methods.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/api/chapters/methods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/api/chapters/server/publications.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/api/chapters/server/publications.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/api/groups/groups.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/api/groups/groups.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/api/groups/methods.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/api/groups/methods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/api/groups/server/publications.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/api/groups/server/publications.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imports/api/schemas/s_group.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/api/schemas/s_group.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/components/CheckboxSem/Checkbox_sem.html" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/CheckboxSem/Checkbox_sem.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/components/CheckboxSem/Checkbox_sem.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/CheckboxSem/Checkbox_sem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/pages/addChapter/addChapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/pages/addChapter/addChapter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/pages/addGroup/addGroup.html" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/pages/addGroup/addGroup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/pages/addGroup/addGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/pages/addGroup/addGroup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/api/series/methods.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/api/series/methods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/api/series/series.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/api/series/series.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/api/series/server/publications.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/api/series/server/publications.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/startup/client/register-templates.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/startup/client/register-templates.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/startup/client/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/startup/client/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/pages/addSeries/addSeries.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/pages/addSeries/addSeries.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,104 +39,116 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/ui/pages/addSeries/addSeries.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="30" column="16" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/ui/pages/addSeries/addSeries.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="72" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/ui/pages/addGroup/addGroup.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/ui/pages/addChapter/addChapter.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/ui/components/nav/nav.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/imports/api/schemas/s_group.js">
+        <entry file="file://$PROJECT_DIR$/imports/ui/pages/group/group.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/ui/components/CheckboxSem/Checkbox_sem.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/ui/components/CheckboxSem/Checkbox_sem.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/api/schemas/s_series.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/ui/pages/addGroup/addGroup.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+            <state relative-caret-position="199">
+              <caret line="23" column="16" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="16" />
               <folding>
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="e#0#22#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/api/chapters/methods.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/api/chapters/server/publications.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/api/schemas/s_chapter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="739">
+              <caret line="83" column="29" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/api/chapters/chapters.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/api/groups/groups.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/api/series/server/publications.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/api/series/series.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/api/groups/server/publications.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/ui/pages/group/group.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -140,6 +168,10 @@
       <find>userte</find>
       <find>flow</find>
       <find>lodash</find>
+      <find>promise</find>
+      <find>group</find>
+      <find>series</find>
+      <find>cons</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -148,20 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/imports/api/chapters/methods.js" />
-        <option value="$PROJECT_DIR$/imports/startup/both/register-methods.js" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/addChapter/addChapter.html" />
-        <option value="$PROJECT_DIR$/imports/api/series/methods.js" />
-        <option value="$PROJECT_DIR$/imports/ui/components/chapterTable/chapterTable.js" />
-        <option value="$PROJECT_DIR$/imports/startup/server/register-api.js" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/overview/overview.js" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/overview/overview.html" />
-        <option value="$PROJECT_DIR$/imports/api/series/server/publications.js" />
-        <option value="$PROJECT_DIR$/imports/ui/components/chapterTable/chapterTable.html" />
-        <option value="$PROJECT_DIR$/imports/api/chapters/server/publications.js" />
-        <option value="$PROJECT_DIR$/imports/startup/both/useraccount.js" />
-        <option value="$PROJECT_DIR$/server/main.js" />
-        <option value="$PROJECT_DIR$/client/main.js" />
         <option value="$PROJECT_DIR$/imports/startup/both/index.js" />
         <option value="$PROJECT_DIR$/client/lib/router.js" />
         <option value="$PROJECT_DIR$/.meteor/packages" />
@@ -179,230 +197,234 @@
         <option value="$PROJECT_DIR$/imports/ui/components/afCheckboxSem/afCheckbox_sem.html" />
         <option value="$PROJECT_DIR$/imports/ui/components/afCheckboxSem/afCheckbox_sem.js" />
         <option value="$PROJECT_DIR$/imports/startup/client/index.js" />
-        <option value="$PROJECT_DIR$/imports/startup/client/routes.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/signup/signup.html" />
         <option value="$PROJECT_DIR$/imports/ui/pages/signup/signup.js" />
         <option value="$PROJECT_DIR$/imports/ui/components/accountButton/accountButton.js" />
-        <option value="$PROJECT_DIR$/imports/startup/client/register-templates.js" />
         <option value="$PROJECT_DIR$/imports/ui/components/accountButton/accountButton.html" />
         <option value="$PROJECT_DIR$/imports/ui/components/afArraySem/afArrayField_sem.js" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/addSeries/addSeries.html" />
         <option value="$PROJECT_DIR$/imports/ui/components/afArraySem/afArrayField_sem.html" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.html" />
         <option value="$PROJECT_DIR$/imports/ui/components/nav/nav.js" />
         <option value="$PROJECT_DIR$/imports/ui/components/nav/nav.html" />
         <option value="$PROJECT_DIR$/imports/ui/pages/addChapter/addChapter.js" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/addSeries/addSeries.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/addGroup/addGroup.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/addGroup/addGroup.html" />
         <option value="$PROJECT_DIR$/imports/ui/components/CheckboxSem/Checkbox_sem.html" />
         <option value="$PROJECT_DIR$/imports/ui/components/CheckboxSem/Checkbox_sem.js" />
+        <option value="$PROJECT_DIR$/imports/startup/client/routes.js" />
+        <option value="$PROJECT_DIR$/imports/api/promise.js" />
         <option value="$PROJECT_DIR$/imports/api/schemas/s_group.js" />
+        <option value="$PROJECT_DIR$/imports/api/chapters/methods.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/addSeries/addSeries.html" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/addSeries/addSeries.js" />
+        <option value="$PROJECT_DIR$/imports/ui/components/groupTable/tableBody.js" />
+        <option value="$PROJECT_DIR$/imports/startup/client/register-templates.js" />
+        <option value="$PROJECT_DIR$/imports/ui/components/groupTable/tableBody.html" />
+        <option value="$PROJECT_DIR$/imports/api/groups/methods.js" />
+        <option value="$PROJECT_DIR$/imports/api/series/methods.js" />
+        <option value="$PROJECT_DIR$/imports/api/series/server/publications.js" />
+        <option value="$PROJECT_DIR$/imports/api/groups/groups.js" />
+        <option value="$PROJECT_DIR$/imports/api/series/series.js" />
+        <option value="$PROJECT_DIR$/imports/api/groups/server/publications.js" />
+        <option value="$PROJECT_DIR$/imports/api/chapters/server/publications.js" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/group/group.html" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/group/group.js" />
+        <option value="$PROJECT_DIR$/imports/api/chapters/chapters.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="421" />
     <option name="y" value="-8" />
-    <option name="width" value="1314" />
-    <option name="height" value="802" />
+    <option name="width" value="1362" />
+    <option name="height" value="730" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <autoscrollToSource ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vaugress" type="462c0819:PsiDirectoryNode" />
+              <item name="vaugress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vaugress" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vaugress" type="462c0819:PsiDirectoryNode" />
-              <item name=".deploy" type="462c0819:PsiDirectoryNode" />
+              <item name="vaugress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vaugress" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vaugress" type="462c0819:PsiDirectoryNode" />
+              <item name="vaugress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vaugress" type="462c0819:PsiDirectoryNode" />
               <item name="imports" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vaugress" type="462c0819:PsiDirectoryNode" />
+              <item name="vaugress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vaugress" type="462c0819:PsiDirectoryNode" />
               <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vaugress" type="462c0819:PsiDirectoryNode" />
+              <item name="vaugress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vaugress" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="chapters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vaugress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vaugress" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="chapters" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vaugress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vaugress" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="groups" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vaugress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vaugress" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="groups" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vaugress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vaugress" type="462c0819:PsiDirectoryNode" />
               <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="schemas" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vaugress" type="462c0819:PsiDirectoryNode" />
+              <item name="vaugress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vaugress" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="series" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vaugress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vaugress" type="462c0819:PsiDirectoryNode" />
+              <item name="imports" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="series" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vaugress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vaugress" type="462c0819:PsiDirectoryNode" />
               <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="startup" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vaugress" type="462c0819:PsiDirectoryNode" />
+              <item name="vaugress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vaugress" type="462c0819:PsiDirectoryNode" />
               <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="startup" type="462c0819:PsiDirectoryNode" />
               <item name="both" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vaugress" type="462c0819:PsiDirectoryNode" />
+              <item name="vaugress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vaugress" type="462c0819:PsiDirectoryNode" />
               <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="startup" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vaugress" type="462c0819:PsiDirectoryNode" />
-              <item name="imports" type="462c0819:PsiDirectoryNode" />
-              <item name="startup" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vaugress" type="462c0819:PsiDirectoryNode" />
+              <item name="vaugress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vaugress" type="462c0819:PsiDirectoryNode" />
               <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vaugress" type="462c0819:PsiDirectoryNode" />
+              <item name="vaugress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vaugress" type="462c0819:PsiDirectoryNode" />
               <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vaugress" type="462c0819:PsiDirectoryNode" />
+              <item name="vaugress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vaugress" type="462c0819:PsiDirectoryNode" />
               <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="afArraySem" type="462c0819:PsiDirectoryNode" />
+              <item name="chapterTable" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vaugress" type="462c0819:PsiDirectoryNode" />
-              <item name="imports" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="arraySelect" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vaugress" type="462c0819:PsiDirectoryNode" />
-              <item name="imports" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="CheckboxSem" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vaugress" type="462c0819:PsiDirectoryNode" />
+              <item name="vaugress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vaugress" type="462c0819:PsiDirectoryNode" />
               <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="groupSelect" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vaugress" type="462c0819:PsiDirectoryNode" />
+              <item name="vaugress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vaugress" type="462c0819:PsiDirectoryNode" />
               <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="nav" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vaugress" type="462c0819:PsiDirectoryNode" />
+              <item name="vaugress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vaugress" type="462c0819:PsiDirectoryNode" />
               <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vaugress" type="462c0819:PsiDirectoryNode" />
-              <item name="imports" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="addChapter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vaugress" type="462c0819:PsiDirectoryNode" />
-              <item name="imports" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="addGroup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vaugress" type="462c0819:PsiDirectoryNode" />
+              <item name="vaugress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vaugress" type="462c0819:PsiDirectoryNode" />
               <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="addSeries" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vaugress" type="462c0819:PsiDirectoryNode" />
+              <item name="vaugress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vaugress" type="462c0819:PsiDirectoryNode" />
               <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="group" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vaugress" type="462c0819:PsiDirectoryNode" />
-              <item name="imports" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="not-found" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vaugress" type="462c0819:PsiDirectoryNode" />
+              <item name="vaugress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vaugress" type="462c0819:PsiDirectoryNode" />
               <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="overview" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vaugress" type="462c0819:PsiDirectoryNode" />
+              <item name="vaugress" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vaugress" type="462c0819:PsiDirectoryNode" />
               <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="signup" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-            <path>
-              <item name="Vaugress" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -424,6 +446,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="MTCustomThemeConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -591,7 +614,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255422000" />
+    <option name="totallyTimeSpent" value="287533000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -603,10 +626,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2074789" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16332982" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -619,30 +642,30 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3298731" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.4544406" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49939686" visible="true" weight="0.24336794" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50060314" side_tool="true" weight="0.31141868" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49894625" visible="true" weight="0.33110368" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50105375" side_tool="true" weight="0.23076923" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info id="npm" order="0" side_tool="true" />
-      <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.24969843" />
-      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.3298731" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="3" weight="0.3298731" />
-      <window_info anchor="bottom" id="Messages" order="4" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.3298731" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.3298731" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16332982" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298731" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3298731" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3298731" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.4544406" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49894625" visible="true" weight="0.33110368" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50105375" side_tool="true" weight="0.23076923" />
+      <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -682,175 +705,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="add reactive tabs, hide instead of remove checkboxes in addGroup" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.meteor/release">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.meteor/versions">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="114" column="17" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/head.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/both/userTemplate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="86" column="6" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#48#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#47#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="46" selection-start-column="46" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.deploy/settings.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.meteor/packages">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yarn.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19323">
-          <caret line="1017" selection-start-line="1017" selection-end-line="1017" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8797">
-          <caret line="463" column="45" selection-start-line="463" selection-start-column="45" selection-end-line="463" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/both/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#171#197#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/both/useraccount.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2311">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/api/groups/groups.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/server/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/server/fixtures.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/server/register-api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.deploy/mup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="48" column="4" lean-forward="true" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/api/schemas/s_chapter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/api/schemas/s_user.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/both/register-methods.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/client/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/arraySelect/arraySelect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="32" selection-start-line="32" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/components/arraySelect/arraySelect.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -859,11 +713,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/components/groupSelect/groupSelect.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/components/groupSelect/groupSelect.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -871,40 +721,6 @@
           <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/signup/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/signup/signup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/client/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1001">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/client/register-templates.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="41" />
-          <folding>
-            <element signature="e#12#68#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -930,13 +746,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/acounts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="56" column="3" selection-start-line="56" selection-start-column="3" selection-end-line="56" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/acounts.js" />
     <entry file="file://$PROJECT_DIR$/imports/ui/components/afArraySem/afArrayField_sem.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -944,31 +754,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.js" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.html" />
     <entry file="file://$PROJECT_DIR$/imports/ui/components/afArraySem/afArrayField_sem.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/nav/nav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -982,27 +773,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/addSeries/addSeries.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="30" column="16" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/addSeries/addSeries.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="72" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/components/nav/nav.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+        <state relative-caret-position="410">
+          <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -1040,17 +814,256 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/api/schemas/s_series.js">
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/signup/signup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        <state relative-caret-position="216">
+          <caret line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/group/public.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/group/private.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/group/private.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/group/public.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/signup/signup.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/schemas/semCheckbox.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/imports/api/schemas/s_group.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+        <state relative-caret-position="1086">
+          <caret line="129" column="13" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/chapterTable/chapterTable.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/schemas/s_user.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/overview/overview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1032">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/addSeries/addSeries.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/addSeries/addSeries.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/nav/nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/startup/client/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="85" column="33" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/startup/client/register-templates.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+          <folding>
+            <element signature="e#12#68#0" expanded="true" />
+            <element signature="e#461#498#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/groupTable/tableBody.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="14" column="48" lean-forward="true" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/schemas/s_series.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/startup/both/register-methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/groups/methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/series/methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/chapterTable/chapterTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="13" selection-start-line="13" selection-end-line="18" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/groupTable/tableBody.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/promise.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/groups/server/publications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/group/group.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/series/series.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/groups/groups.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/series/server/publications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/chapters/methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/chapters/server/publications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/chapters/chapters.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/schemas/s_chapter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="739">
+          <caret line="83" column="29" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/group/group.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

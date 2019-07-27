@@ -5,5 +5,11 @@ let groups = new Mongo.Collection('groups');
 
 groups.attachSchema(group);
 
-export {groups};
+let groupQuery = function (ID) {
+    return {
+        find: { _id: ID}
+    };
+};
+
+export {groups, groupQuery};
 

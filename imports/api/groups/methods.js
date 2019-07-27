@@ -11,6 +11,7 @@ SimpleSchema.defineValidationErrorTransform(error => {
 });
 
 const groupValidation = group.newContext();
+
 Meteor.methods({
     'groups.add'(obj) {
         if(groupValidation.validate(obj)){

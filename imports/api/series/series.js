@@ -6,5 +6,15 @@ let Series = new Mongo.Collection('series');
 Series.attachSchema(series);
 
 
-export {Series};
+
+// client & server
+let seriesQuery = function (groupID) {
+    return {
+        find: { groups: groupID}
+    };
+};
+
+
+
+export {Series, seriesQuery};
 

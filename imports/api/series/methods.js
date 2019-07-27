@@ -29,6 +29,9 @@ Meteor.methods({
         console.log(seriesID, chapterID);
         Series.update({_id:seriesID}, {$push:{chapters: chapterID}},);
     },
+    'series.byGroup' (groupID){
+        return Series.findOne({groups: groupID});
+    }
 
 });
 

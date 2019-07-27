@@ -5,5 +5,11 @@ let chapters = new Mongo.Collection('chapters');
 
 chapters.attachSchema(chapter);
 
-export {chapters};
+let chapterQuery = function (seriesID) {
+    return {
+        find: { series: { $in: seriesID}}
+    };
+};
+
+export {chapters, chapterQuery};
 

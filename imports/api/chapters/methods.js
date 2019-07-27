@@ -19,8 +19,11 @@ Meteor.methods({
         else{ throw new Meteor.Error('invalid form')}
     },
     'chapters.byID'(ID) {
-        return groups.findOne({_id: ID}, {fields: {'name':1}});
+        return chapters.findOne({_id: ID}, {fields: {'name':1}});
     },
+    'chapters.bySeries' (ID){
+        return chapters.find({series: ID })
+    }
 
 });
 

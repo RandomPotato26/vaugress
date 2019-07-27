@@ -11,12 +11,15 @@ import '../../ui/components/nav/nav.js';
 import '../../ui/components/accountButton/accountButton.js';
 import '../../ui/components/footer/footer.js';
 import '../../ui/components/chapterTable/chapterTable.js';
+import '../../ui/components/groupTable/tableBody.js';
+
 
 //Pages
 import '../../ui/pages/home/home.js';
 import '../../ui/pages/signup/signup.js';
 import '../../ui/pages/not-found/not-found.js';
 
+import '../../ui/pages/group/group.js';
 import '../../ui/pages/overview/overview.js';
 import '../../ui/pages/addGroup/addGroup.js';
 import '../../ui/pages/addSeries/addSeries.js';

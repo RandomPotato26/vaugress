@@ -83,6 +83,15 @@ FlowRouter.route('/add-chapter', {
   },
 });
 
+FlowRouter.route('/group/:groupID', {
+  name: 'group',
+  action() {
+    BlazeLayout.render('App_body', { nav: 'nav', main: 'group', footer:'footer' });
+  },
+});
+
+
+
 FlowRouter.notFound = {
   action() {
     BlazeLayout.render('App_body', { main: 'App_notFound' });
