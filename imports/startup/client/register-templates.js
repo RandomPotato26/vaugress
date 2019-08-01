@@ -11,6 +11,7 @@ import '../../ui/components/nav/nav.js';
 import '../../ui/components/accountButton/accountButton.js';
 import '../../ui/components/footer/footer.js';
 import '../../ui/components/chapterTable/chapterTable.js';
+import '../../ui/components/chapterRow/chapterRow.js';
 import '../../ui/components/groupTable/tableBody.js';
 
 

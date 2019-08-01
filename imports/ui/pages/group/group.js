@@ -1,9 +1,13 @@
 import './group.html';
 import {Series} from "../../../api/series/series";
-import {chapters} from "../../../api/chapters/chapters";
+import {chapterQuery, chapters} from "../../../api/chapters/chapters";
 import {groups} from "../../../api/groups/groups";
+import {Template} from "meteor/templating";
 
 Template.group.onCreated(function () {
+    this.stateValue = new ReactiveVar( false );
+
+    //must assign this to a var to use the .ready() callback
     var s = Meteor.subscribe('series.byGroup', FlowRouter.getParam('groupID'));
     Meteor.subscribe('groups.byID', FlowRouter.getParam('groupID'));
 
@@ -17,21 +21,42 @@ Template.group.onCreated(function () {
         }
     });
 });
+Template.group.events({
+    'click .button': function(event){
+        $.tab('change tab', event.target.id);
+        $.tab('set state', event.target.id);
+
+    }
+});
+
+Template.group.onRendered( function () {
+
+});
+
+Template.group.events({
+    'change input': function(event) {
+        if(event.target.name === 'viewDates'){
+            var x = event.target.checked;
+            Template.instance().stateValue.set(x);
+        }
+    }
+});
 
 
 Template.group.helpers({
-        print(m) {
-            console.log(m);
-        },
-        target: function() {
-            return groups.findOne();
-        },
-        getSeries: function () {
-            return Series.find().fetch();
-        },
-        getChapters: function () {
-            return chapters.find().fetch();
-        }
+    print(t, m) {
+        console.log(t, m);
+    },
+    target: function() {
+        return groups.findOne();
+    },
+    getSeries: function () {
+        return Series.find().fetch();
+    },
+    isChecked() {
+        return Template.instance().stateValue.get();
+    }
+
 
     }
 );

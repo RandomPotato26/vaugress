@@ -8,19 +8,19 @@ Template.addGroup.helpers({
 
     isChecked() {
 
-        return Session.get("statevalue");
+        return Template.instance().stateValue.get();
     }
 });
 
 Template.addGroup.onCreated(function () {
-   Session.set("statevalue", false);
+   this.stateValue = new ReactiveVar( false );
 });
 
 Template.addGroup.events({
     'change input': function(event) {
         if(event.target.name === 'displayMore'){
             var x = event.target.checked;
-            Session.set("statevalue", x);
+            Template.instance().stateValue.set(x);
         }
 
     }
@@ -49,7 +49,7 @@ AutoForm.hooks({
             console.log(insertDoc);
             // console.log("People doc with auto values", insertDoc);
             // AutoForm.resetForm('addSeries');
-
+            Template.instance().stateValue.set(false);
             this.done();
             return false;
 

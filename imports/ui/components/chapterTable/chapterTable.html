@@ -1,25 +1,69 @@
 <template name="chapterTable">
-    {{#if chapters}}
-        <table class="ui small compact celled table">
+
+    <div class="ui bottom attached tab segment" data-tab="{{series._id}}">
+        <div class="ui header">{{#if (series.title.alias)}} {{series.title.alias}} {{else}} {{series.title.fullTitle}} {{/if}} </div>
+        <table class="ui small very compact selectable striped structured celled table">
             <thead>
-                <tr>
-                    <th>Chapter</th>
-                    <th>vol</th>
-                    <th>Title</th>
-                </tr>
+            <tr>
+                <th rowspan="2">
+                    <div class="ui fitted toggle checkbox">
+                        <input type="checkbox" name="editAll">
+                        <label></label>
+                    </div>
+                    <i class="edit icon"></i>
+                </th>
+                <th rowspan="2">Chapter</th>
+                <th rowspan="2">vol</th>
+                <th rowspan="2">Title</th>
+                <!-- -->
+                <th colspan="{{#if isChecked}} 3 {{else}} 2 {{/if}}">TL</th>
+                <th colspan="{{#if isChecked}} 3 {{else}} 2 {{/if}}">PR</th>
+                <th colspan="{{#if isChecked}} 3 {{else}} 2 {{/if}}">CL</th>
+                <th colspan="{{#if isChecked}} 3 {{else}} 2 {{/if}}">RD</th>
+                <th colspan="{{#if isChecked}} 3 {{else}} 2 {{/if}}">TS</th>
+                <th colspan="{{#if isChecked}} 3 {{else}} 2 {{/if}}">QC</th>
+                <th colspan="{{#if isChecked}} 3 {{else}} 2 {{/if}}">RL</th>
+            </tr>
+            <tr>
+                <!-- TL -->
+                <th>name</th>
+                <th>status</th>
+                <th style=" {{#unless isChecked}} display: none {{/unless}}">date</th>
+                <!-- PR -->
+                <th>name</th>
+                <th>status</th>
+                <th style=" {{#unless isChecked}} display: none {{/unless}}">date</th>
+                <!-- CL -->
+                <th>name</th>
+                <th>status</th>
+                <th style=" {{#unless isChecked}} display: none {{/unless}}">date</th>
+                <!-- RD -->
+                <th>name</th>
+                <th>status</th>
+                <th style=" {{#unless isChecked}} display: none {{/unless}}">date</th>
+                <!-- TS -->
+                <th>name</th>
+                <th>status</th>
+                <th style=" {{#unless isChecked}} display: none {{/unless}}">date</th>
+                <!-- QC -->
+                <th>name</th>
+                <th>status</th>
+                <th style=" {{#unless isChecked}} display: none {{/unless}}">date</th>
+                <!-- Release -->
+                <th>name</th>
+                <th>status</th>
+                <th style=" {{#unless isChecked}} display: none {{/unless}}">date</th>
+            </tr>
             </thead>
             <tbody>
-                {{#each chapter in getChapter (chapters)}}
-                    {{#with chapter}}
 
-                        <tr>
-                            <td data-label="Chapter">{{number}}</td>
-                            <td data-label="vol">{{volume}}</td>
-                            <td data-label="Title">{{title}}</td>
-                        </tr>
-                    {{/with}}
-                {{/each}}
+            {{#each chapter in getChapters (series._id)}}
+                {{#if chapter}}
+                    {{> chapterRow chapter=chapter details=isChecked editAll=getEditAll}}
+                {{/if}}
+            {{/each}}
             </tbody>
         </table>
-    {{/if}}
+    </div>
+
 </template>

@@ -83,10 +83,22 @@ FlowRouter.route('/add-chapter', {
   },
 });
 
-FlowRouter.route('/group/:groupID', {
-  name: 'group',
+FlowRouter.route('/group/:groupID/private', {
+  name: 'group.private',
   action() {
     BlazeLayout.render('App_body', { nav: 'nav', main: 'group', footer:'footer' });
+  },
+});
+FlowRouter.route('/group/:groupID/public', {
+  name: 'group.public',
+  action() {
+    BlazeLayout.render('App_body', { nav: 'nav', main: 'group', footer:'footer' });
+  },
+});
+FlowRouter.route('/group/:groupID', {
+  action() {
+    FlowRouter.go('/group/:groupID/public', {groupID: FlowRouter.getParam('groupID')});
+
   },
 });
 

@@ -1,22 +1,35 @@
 import {Template} from "meteor/templating";
-import {chapters} from "../../../api/chapters/chapters";
-import {Series} from "../../../api/series/series";
-import {Meteor} from "meteor/meteor";
 
 import './chapterTable.html';
+import {chapterQuery, chapters} from "../../../api/chapters/chapters";
 
 Template.chapterTable.onCreated(function bodyOnCreated() {
-    Meteor.subscribe('chapters.names');
-    Meteor.subscribe('series.names');
+    this.editAll = new ReactiveVar();
+
+
+});
+
+Template.chapterTable.events({
+    'change input': function(event) {
+
+        if(event.target.name === "editAll"){
+            var y = event.target.checked;
+            Template.instance().editAll.set(y);
+        }
+    }
+
 });
 
 Template.chapterTable.helpers({
-    getChapter: function(chapterArray) {
-        // console.log(Series.find( {_id: {$in:seriesArray} } ).fetch(), "array in ", seriesArray);
-        console.log(chapterArray);
-        console.log(chapters.find({_id: {$in:chapterArray} }).fetch());
-        return chapters.find({_id: {$in:chapterArray} }).fetch();
+    getEditAll: function () {
+        return Template.instance().editAll.get();
     },
 
+    print(t, m) {
+        console.log(t, Template.instance());
+    },
+    getChapters: function (seriesID) {
+        return chapters.find(chapterQuery([seriesID]).find, {sort: {number: 1}}).fetch();
+    },
 
 });

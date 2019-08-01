@@ -115,6 +115,16 @@ const Group = new SimpleSchema({
         //     }
         // }
     },
+    publicStats: {
+        type: Boolean,
+        label: "Have a public page for viewers to vew group stats and progress",
+        defaultValue: true,
+        // autoform: {
+        //     afFieldInput: {
+        //         type: "sem-checkbox",
+        //     }
+        // }
+    },
 
     wantedRoles: {
         type: Array,

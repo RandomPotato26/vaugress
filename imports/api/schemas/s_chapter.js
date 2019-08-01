@@ -66,7 +66,7 @@ const Chapter = new SimpleSchema({
       regEx: SimpleSchema.RegEx.Id,
     },
 
-    number: { type: SimpleSchema.Integer, min: 0, required: true},
+    number: { type: Number, min: 0, required: true},
     series: {type: String, regEx: SimpleSchema.RegEx.Id},
     title: {
         type: String,

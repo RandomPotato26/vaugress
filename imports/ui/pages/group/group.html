@@ -1,57 +1,29 @@
 <template name="group">
-    <br>
-    <div class="ui container">
             {{#let group = target}}
-                {{#if target}}
-                    {{print target}}
-                    {{print getSeries}}
-                    {{print getChapters}}
-
-                {{/if}}
-
-            <div class="ui header">{{target.name}}</div>
-
-                {{#each series in getSeries (target._id)}}
-                    {{#with series}}
-                        {{#if series}}
-                            <div class="ui segment">
-                                <div class="ui header">{{series.name}}</div>
-                                <table class="ui small compact celled table">
-                                    <thead>
-                                    <tr>
-                                        <th>Chapter</th>
-                                        <th>vol</th>
-                                        <th>Title</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-
-                                    {{#each chapter in getChapters (series._id)}}
-                                        {{#with chapter}}
-                                            {{#if chapter}}
-                                                <tr>
-                                                    <td data-label="Chapter">{{TL.assignName}}</td>
-                                                    <td data-label="vol">{{volume}}</td>
-                                                    <td data-label="Title">{{title}}</td>
-                                                </tr>
-                                            {{/if}}
-
-                                        {{/with}}
-                                    {{/each}}
-                                    </tbody>md
-                                </table>
-                            </div>
-
-                        {{/if}}
+            <div class="ui segment">
 
 
-                        <tr>
-                            <td data-label="Chapter">{{number}}</td>
-                            <td data-label="vol">{{volume}}</td>
-                            <td data-label="Title">{{title}}</td>
-                        </tr>
-                    {{/with}}
+                <div class="ui two column very relaxed grid">
+                    <div class="column">
+                        <h1 class="ui header">{{target.name}}</h1>
+                    </div>
+                    <div class="column right aligned">
+                        <div class="ui toggle checkbox">
+                            <input type="checkbox" name="viewDates">
+                            <label>View Dates</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui top attached menu">
+                    {{#each series in getSeries}}
+                        <div class="ui item button" data-tab="{{series._id}}" id="{{series._id}}">{{#if (series.title.alias)}} {{series.title.alias}} {{else}} {{series.title.fullTitle}} {{/if}}</div>
+                    {{/each}}
+                </div>
+
+                {{#each series in getSeries}}
+                    {{>chapterTable series=series isChecked=isChecked}}
                 {{/each}}
+            </div>
             {{/let}}
-    </div>
 </template>
