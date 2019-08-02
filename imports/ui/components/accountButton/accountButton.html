@@ -2,7 +2,11 @@
     <div class="">
 
         <div class="ui compact button left attached" href="/sign-in">
-            <a class="" href="/login">Sign In</a>
+            {{#if isLoggedIn}}
+                <a id="logout">Sign Out</a>
+            {{else}}
+                <a class="" href="/login">Sign In</a>
+            {{/if}}
         </div>
         <div class="ui compact right attached icon simple dropdown button">
             <i class="dropdown icon"></i>
