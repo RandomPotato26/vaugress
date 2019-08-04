@@ -24,7 +24,7 @@ Template.group.onCreated(function () {
 Template.group.events({
     'click .button': function(event){
         $.tab('change tab', event.target.id);
-        $.tab('set state', event.target.id);
+        // $.tab('set state', event.target.id);
 
     }
 });

@@ -45,7 +45,7 @@ AccountsTemplates.configureRoute('signUp', {
 //   });
 // }
 
-
+//        DASHBOARD
 FlowRouter.route('/', {
   name: 'App.home',
   action() {

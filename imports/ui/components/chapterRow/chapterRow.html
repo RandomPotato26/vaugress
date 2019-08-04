@@ -1,43 +1,91 @@
 <template name="chapterRow">
     {{setID chapter._id seriesID}}
     {{updateEdit editAll}}
-    <tr>
-        <td><div class="ui fitted toggle checkbox">
-            <input type="checkbox" name="{{chapter._id}}" checked={{checkHandler}}>
-            <label></label>
-        </div></td>
-        <td style="background-color:lightskyblue">{{chapter.number}}</td>
-        <td>{{chapter.volume}}</td>
-        <td>{{chapter.title}}</td>
+    {{#if getEdit}}
+        {{#autoForm collection=chapterCollection doc=chapter id=chapter._id type="update"}}
 
-        <td>{{chapter.TL.assigned.name}}</td>
-        {{#if details}} <td>{{chapter.TL.assignDate}}</td> {{/if}}
-        <td>{{chapter.TL.complete}}</td>
+            <tr>
+            <td><div class="ui fitted toggle checkbox">
+                <input type="checkbox" name="{{chapter._id}}" checked={{checkHandler}}>
+                <label></label>
+            </div></td>
 
-        <td>{{TL.assigned.name}}</td>
-        {{#if details}} <td>{{TL.assignDate}}</td> {{/if}}
-        <td>{{TL.complete}}</td>
 
-        <td>{{TL.assigned.name}}</td>
-        {{#if details}} <td>{{TL.assignDate}}</td> {{/if}}
-        <td>{{TL.complete}}</td>
+                <td style="background-color:lightskyblue">{{> afQuickField name='number'}}</td>
+            <td>{{chapter.volume}}</td>
+            <td>{{chapter.title}}</td>
 
-        <td>{{TL.assigned.name}}</td>
-        {{#if details}} <td>{{TL.assignDate}}</td> {{/if}}
-        <td>{{TL.complete}}</td>
+            <td>{{chapter.TL.assigned.name}}</td>
+            {{#if details}} <td>{{chapter.TL.assignDate}}</td> {{/if}}
+            <td>{{chapter.TL.complete}}</td>
 
-        <td>{{TL.assigned.name}}</td>
-        {{#if details}} <td>{{TL.assignDate}}</td> {{/if}}
-        <td>{{TL.complete}}</td>
+            <td>{{TL.assigned.name}}</td>
+            {{#if details}} <td>{{TL.assignDate}}</td> {{/if}}
+            <td>{{TL.complete}}</td>
 
-        <td >{{TL.assigned.name}}</td>
-        {{#if details}} <td>{{TL.assignDate}}</td> {{/if}}
-        <td>{{TL.complete}}</td>
+            <td>{{TL.assigned.name}}</td>
+            {{#if details}} <td>{{TL.assignDate}}</td> {{/if}}
+            <td>{{TL.complete}}</td>
 
-        <td style="{{#if getEdit}}background-color:red {{/if}}">{{TL.assigned.name}}</td>
-        {{#if details}} <td>{{TL.assignDate}}</td> {{/if}}
-        <td>{{TL.complete}}</td>
+            <td>{{TL.assigned.name}}</td>
+            {{#if details}} <td>{{TL.assignDate}}</td> {{/if}}
+            <td>{{TL.complete}}</td>
 
-    </tr>
+            <td>{{TL.assigned.name}}</td>
+            {{#if details}} <td>{{TL.assignDate}}</td> {{/if}}
+            <td>{{TL.complete}}</td>
+
+            <td >{{TL.assigned.name}}</td>
+            {{#if details}} <td>{{TL.assignDate}}</td> {{/if}}
+            <td>{{TL.complete}}</td>
+
+            <td style="{{#if getEdit}}background-color:red {{/if}}">{{TL.assigned.name}}</td>
+            {{#if details}} <td>{{TL.assignDate}}</td> {{/if}}
+            <td>{{TL.complete}}</td>
+
+                <td><button type="submit" class="ui button primary">update</button></td>
+        </tr>
+            {{/autoForm}}
+    {{else}}
+        <tr>
+
+            <td><div class="ui fitted toggle checkbox">
+                <input type="checkbox" name="{{chapter._id}}" checked={{checkHandler}}>
+                <label></label>
+            </div></td>
+            <td style="background-color:lightskyblue">{{chapter.number}}</td>
+            <td>{{chapter.volume}}</td>
+            <td>{{chapter.title}}</td>
+
+            <td>{{chapter.TL.assigned.name}}</td>
+            {{#if details}} <td>{{chapter.TL.assignDate}}</td> {{/if}}
+            <td>{{chapter.TL.complete}}</td>
+
+            <td>{{TL.assigned.name}}</td>
+            {{#if details}} <td>{{TL.assignDate}}</td> {{/if}}
+            <td>{{TL.complete}}</td>
+
+            <td>{{TL.assigned.name}}</td>
+            {{#if details}} <td>{{TL.assignDate}}</td> {{/if}}
+            <td>{{TL.complete}}</td>
+
+            <td>{{TL.assigned.name}}</td>
+            {{#if details}} <td>{{TL.assignDate}}</td> {{/if}}
+            <td>{{TL.complete}}</td>
+
+            <td>{{TL.assigned.name}}</td>
+            {{#if details}} <td>{{TL.assignDate}}</td> {{/if}}
+            <td>{{TL.complete}}</td>
+
+            <td >{{TL.assigned.name}}</td>
+            {{#if details}} <td>{{TL.assignDate}}</td> {{/if}}
+            <td>{{TL.complete}}</td>
+
+            <td>{{TL.assigned.name}}</td>
+            {{#if details}} <td>{{TL.assignDate}}</td> {{/if}}
+            <td>{{TL.complete}}</td>
+
+        </tr>
+    {{/if}}
 
 </template>

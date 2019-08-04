@@ -2,6 +2,7 @@ accounts-base@1.4.4
 accounts-password@1.5.1
 aldeed:autoform@6.3.0
 aldeed:collection2@3.0.2
+aldeed:tabular@2.1.1
 aldeed:template-extension@4.1.0
 allow-deny@1.1.0
 anychart:anychart@1.4.3

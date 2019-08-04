@@ -1,5 +1,5 @@
 import {Template} from "meteor/templating";
-
+import {chapters} from "../../../api/chapters/chapters";
 import './chapterRow.html';
 
 Template.chapterRow.onCreated(function bodyOnCreated() {
@@ -36,6 +36,12 @@ Template.chapterRow.helpers({
     },
     updateEdit: function (editAll) {
         Template.instance().edit.set(editAll);
+    },
+    chapterCollection: function () {
+        return chapters;
+    },
+    autoFormID: function(docID){
+      return 'chapterUpdate-' +  docID;
     },
     print(t, m) {
         console.log(t, Template.instance());
