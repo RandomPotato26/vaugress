@@ -20,10 +20,12 @@
                         <div class="ui item button" data-tab="{{series._id}}" id="{{series._id}}">{{#if (series.title.alias)}} {{series.title.alias}} {{else}} {{series.title.fullTitle}} {{/if}}</div>
                     {{/each}}
                 </div>
+                {{> tabular table=TabularTables.Chapters class="ui very compact selectable celled table"}}
 
-                {{#each series in getSeries}}
-                    {{>chapterTable series=series isChecked=isChecked}}
-                {{/each}}
+                {{#if createModal}}
+                    {{> popupEdit}}
+
+                {{/if}}
             </div>
             {{/let}}
 </template>

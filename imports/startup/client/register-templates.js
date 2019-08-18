@@ -13,6 +13,7 @@ import '../../ui/components/footer/footer.js';
 import '../../ui/components/chapterTable/chapterTable.js';
 import '../../ui/components/chapterRow/chapterRow.js';
 import '../../ui/components/groupTable/tableBody.js';
+import '../../ui/components/popupEdit/popupEdit.js';
 
 
 //Pages

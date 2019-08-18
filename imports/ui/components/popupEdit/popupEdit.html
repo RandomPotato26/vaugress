@@ -1,0 +1,30 @@
+<template name="popupEdit">
+    <div class="ui modal">
+        <div class="header">Header</div>
+        <div class="content">
+            {{#autoForm schema=chapterSchema id="editChapter" type="method" meteormethod="groups.add" validation="submitThenKeyup"}}
+                <div class="ui form">
+                    {{> afQuickField name='title'}}
+                    {{> afQuickField name='volume'}}
+
+                    {{> afQuickField label=false name='TL.assigned'}}
+                    {{> afQuickField name='TL.assignDate'}}
+                    {{> afQuickField label=false name='TL.complete'}}
+                    {{> afQuickField name='TL.completeDate'}}
+                    {{> afQuickField name='TL.status'}}
+                </div>
+
+
+
+                <button type="submit" class="ui button primary">Add</button>
+
+            {{/autoForm}}
+        </div>
+        <div class="actions">
+            <div class="ui positive button">Approve</div>
+            <div class="ui button">Neutral</div>
+            <div class="ui cancel button">Cancel</div>
+        </div>
+
+    </div>
+</template>

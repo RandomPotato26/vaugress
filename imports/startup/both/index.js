@@ -4,3 +4,4 @@
 
 import './useraccount.js';
 import './register-methods.js'
+import './Table.js'
